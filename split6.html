@@ -1,0 +1,11 @@
+<input id=A oninput=a.src=value><input id=B oninput=b.src=value><input id=C oninput=c.src=value>
+<iframe id=a></iframe><iframe id=b></iframe><iframe id=c></iframe>
+<input id=D oninput=d.src=value><input id=E oninput=e.src=value><input id=F oninput=f.src=value>
+<iframe id=d></iframe><iframe id=e></iframe><iframe id=f></iframe>
+<script>
+onbeforeunload=function(e){return false}
+</script>
+<style>
+* { margin: 0; padding: 0; outline: 0; box-sizing: border-box; }
+input { width: 33.33% }
+iframe { width: 33.33%; height: calc(50vh - 20px) }
